@@ -16,7 +16,7 @@ header{
 }
 
   .carousel-caption{
-    padding-bottom: 280px;
+    padding-bottom: 15%;
 }
 
 #guzik{
@@ -54,10 +54,6 @@ video{
     background-color: transparent!important;
 }
 
-button{
-
-}
-
 .navbar-brand{
     font-family: 'Girassol', cursive;
     font-size: 55px;
@@ -81,9 +77,8 @@ button{
 
 }
 
-.navbar-toggler{
-    border-color: white;
-    border-width: 3px;
+.navbar-nav li:hover>.dropdown-menu{
+    display: block;
 }
 
 .nav-link{
@@ -123,7 +118,6 @@ button{
     color: #a12e2e!important;
 }
 
-button{}
 
   /* ----------sections----------- */
 
@@ -172,10 +166,6 @@ button{}
     text-align: left;
     background-image: linear-gradient(black, #742121);
     padding: 60px;
-}
-
-#uslugi{
-
 }
 
   /* ----------social media----------- */
@@ -361,10 +351,6 @@ div.gallery:hover {
 div.gallery img {
     width: 70%;
     height: auto;
-
-}
-  
-div.gallery img:hover {
 
 }
   
