@@ -1,12 +1,15 @@
 {
-  "name": "Strona_Barber",
+  "name": "strona_barber",
   "version": "1.0.0",
-  "description": "",
+  "description": "Awesome barbershop website from my portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lite-server"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Arthur Strzewiczek",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "2.5.4"
+  }
 }
