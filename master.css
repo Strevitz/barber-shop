@@ -6,6 +6,40 @@ body{
 
   /* ----------hero----------- */
 
+.bg-danger{
+    background-color: #742121!important;
+}
+
+.bg-blood{
+    background-color: #252525;
+}
+
+.bg-gradient{
+    background-image: linear-gradient(#742121, #252525);
+}
+
+.timepicker-hour{
+    color: black;
+}
+
+.separator{
+    color: black;
+}
+
+.timepicker-minute{
+    color: black;
+}
+
+.form-check-input{
+    position: relative;
+}
+
+#mainContent{
+    background-image: linear-gradient(#742121, #252525);
+    padding: 10px;
+    margin: 0 auto;
+}
+
 .container{
     max-width: 100%;
     padding: 0px 0px;
@@ -40,22 +74,22 @@ body{
     background-image: linear-gradient(black, #742121);
 }
 
-table, th, td{
+#pricelist, #cell{
     text-align:justify;
     padding: 12px;
     margin-left: auto;
     margin-right: auto;
 }
 
-td{
+#cell{
     padding-right: 45px;
 }
 
-table{
+#pricelist{
     text-align:center;
 }
 
-  .carousel-caption{
+.carousel-caption{
     padding-bottom: 15%;
 }
 
@@ -137,23 +171,24 @@ video{
 .dropdown-menu{
     text-align: center;
     background-color: black;
-
     border: none;
 }
 
 .dropdown-menu:hover{
     background-color: black;
-    transform: matrix(1, 0, 0, 1, 45, 40);
 }
 
 .dropdown-item{
     font-size: 20px;
     text-align: left;
+    color: white;
+    background-color: black;
 }
 
 .dropdown-item:hover{
 
     color: #a12e2e!important;
+    background-color: black!important;
 }
 
   /* ----------game page----------- */
@@ -224,42 +259,30 @@ video{
 }
 
 
-input{
+.input100{
     width: 100%;
     max-width: 400px;
     display: block;
     background-color: white;
     color: black;
     padding: 6px;
-
     outline: none;
+    border-radius: 5px;
 }
 
-textarea{
+#textContact{
     width: 100%;
     max-width: 400px;
     height: 200px;
     padding: 6px;
     outline-color: gold;
     outline-width: 8px;
+    border-radius: 5px;
 }
 
 h1{
     margin-top: 0px;
     margin-bottom: 0px;
-}
-
-
-
-.contact100-form-btn{
-    font-size: 18px;
-    color: white;
-    background-color: black;
-    opacity: 0.7;
-    padding: 9px;
-    border-width: 4px;
-    border-radius: 8px;
-    transition: ease-in-out 0.3s;
 }
 
 .contact100-form-btn:hover{

@@ -51,7 +51,22 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
 
+    
+    $('#datetimepicker13').datetimepicker({
+        inline: true,
+        sideBySide: true,
+        locale: 'pl',
+        stepping: 15,
+        minDate: moment(),
+        daysOfWeekDisabled: [0],
+        disabledHours: [0,1,2,3,4,5,6,7,8,19,20,21,22,23],
+    });  
+    
 })(jQuery);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-23581568-13');

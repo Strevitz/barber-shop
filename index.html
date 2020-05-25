@@ -10,16 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Clean Cuts & Shaves - Barber Shop</title>
+    <title>Najlepsze fryzury - Barber Shop</title>
     <meta name="author" content="Arthur Strzewiczek">
-    <meta name="description" content="UZUPEŁNIJ I ZNAJDZ OPIS W NECIE">
-    <meta name="keywords" content="javascript, html, css, less css, web deweloper, bootstrap, sketch, adobe xd, ux, ui, frontend, chrome tools">
+    <meta name="description" content="Barbershop w Warszawie. Topowi Barberzy, najlepsze strzyżenia w okolicy.">
+    <meta name="keywords" content="barber, barbershop, fryzjer, warszawa, fryzury, broda, usługi fryzjerskie, warszawa, mazowieckie">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link rel="stylesheet" href="master.css" type="text/css">
     <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Girassol|Oswald&display=swap" rel="stylesheet">
-  
+    
   </head>
 
   <body>
@@ -28,8 +30,9 @@
 
       <header>
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-barber">
+          <nav class="navbar navbar-expand-md navbar-dark bg-barber">
               <a class="navbar-brand" href="index.html">BARBER <sub id="orginal">&reg;</sub></a>
+
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -50,9 +53,9 @@
                       menu
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item disabled" href="#" style="color: white;">zarezerwuj termin</a>
-                      <a class="dropdown-item disabled" href="#" style="color: white;">sklep</a>
-                      <a class="dropdown-item disabled" href="#" style="color: white;">szkolenia</a>
+                      <a class="dropdown-item" href="#exampleModalLong"  data-toggle="modal" data-target="#exampleModalLong">zarezerwuj termin</a>
+                      <a class="dropdown-item disabled" href="#" >sklep</a>
+                      <a class="dropdown-item disabled" href="#" >szkolenia</a>
                     </div>
                   </li>
                 </ul>
@@ -76,21 +79,21 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                    <video pause loop muted class="d-block w-100" src="media/barber1.mp4" type="video/mp4"></video>
                     <div class="carousel-caption d-none d-md-block">
-                        <button id="guzik">zarezerwuj termin</button>
+                        <button id="guzik" data-toggle="modal" data-target="#exampleModalLong">zarezerwuj termin</button>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                    <video pause loop muted class="d-block w-100" src="media/barber2.mp4" type="video/mp4"></video>
                     <div class="carousel-caption d-none d-md-block">
                         <button id="guzik">sklep</button>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                    <video pause loop muted class="d-block w-100" src="media/barber3.mp4" type="video/mp4"></video>
                     <div class="carousel-caption d-none d-md-block">
                         <button id="guzik">szkolenia</button>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -107,6 +110,243 @@
                 </a>
               </div>
           </div>
+
+          <!--------------modal booking form------------>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content col-xs-10">
+                <div class="modal-header bg-danger">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Zarezerwuj termin</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white;">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-gradient">
+
+                  <div id="mainContent" class="col-sm-12 bg-dark">
+
+                    <form>
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+
+                            <label for="phone"><strong>imię</strong></label>
+                            <input type="text" class="form-control" placeholder="Jan">
+                          </div>
+                          <div class="col-sm-6">
+
+                            <label for="phone"><strong>nazwisko</strong></label>
+                            <input type="text" class="form-control" placeholder="Barberski">
+                          </div>
+                        </div>
+            
+                        <div class="form-group row">
+                          <div class="col-sm-12">
+                          <label for="phone"><strong>telefon</strong></label>
+                          <input class="form-control" type="number" name="phone" id="phone" placeholder="+48 777-777-777">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <div class="col-sm-12">
+                          <label for="firstname"><strong>e-mail</strong></label>
+                          <input class="form-control" id="email" type="text" name="email" placeholder="jan@barberski.pl">
+                          </div>
+                        </div>
+                       
+                        <fieldset class="border p-2">
+                          <legend  class="w-auto">Wybierz Barbera</legend>
+                       
+                          <div class="col-sm-12 pl-0">
+                            <div class="form-check pb-4 ml-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label pl-4" for="inlineRadio1">Barber A<img src="img/avatar.png" alt="Barber" width="60%"></label>
+                            </div>
+                            <div class="form-check pb-4 ml-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label pl-4" for="inlineRadio2">Barber B<img src="img/avatar.png" alt="Barber" width="60%"></label>
+                            </div>
+                            <div class="form-check pb-4 ml-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label pl-4" for="inlineRadio3">Barber C<img src="img/avatar.png" alt="Barber" width="60%"></label>
+                            </div>
+                            <div class="form-check pb-4 ml-4">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                              <label class="form-check-label pl-4" for="inlineRadio4">Barber D<img src="img/avatar.png" alt="Barber" width="60%"></label>
+                            </div>
+                            <div class="form-check pb-4 ml-4">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                              <label class="form-check-label pl-4" for="inlineRadio5">Barber E<img src="img/avatar.png" alt="Barber" width="60%"></label>
+                            </div>
+                            <div class="form-check pb-4 ml-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                            <label class="form-check-label pl-4" for="inlineRadio6">Barber F<img src="img/avatar.png" alt="Barber" width="60%"></label>
+                            </div>
+                          </div>
+
+                        </fieldset>
+                           
+                        <fieldset class="border p-2 mb-3">
+                          <legend  class="w-auto">Wybierz Usługi</legend>
+              
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Strzyżenie Buzz 00zł</label>  
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Strzyżenie 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Combo 00zł</label>
+                          </div> 
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Trymowanie brody 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Trymowanie brody z brzytwą 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Tuszowanie brody 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Królewskie golenie 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Strzyżenie chłopca 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Strzyżenie ojciec i syn 00zł</label> 
+                          </div>
+                          <div class="form-check pl-0 pb-2">
+                            <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Woskowanie 00zł</label> 
+                          </div>
+
+                        </fieldset>
+            
+                        <h4>Wybierz zniżkę</h4>
+            
+                        <div class="form-group row">
+                        <div class="col-sm-12">
+                          <label for="discount">
+                          <select name="discount" id="discount" class="form-control"></label>
+                            <option>-----------------</option>
+                            <option>karta stałego klienta</option>
+                            <option>student -10%</option>
+                            <option>senior (od 65 lat) -20%</option>
+                            <option>weteran -30%</option>
+                          </select>
+                        </div>
+                        </div>
+            
+                        <h4>Wybierz termin</h4>
+                          
+                          <div style="overflow:hidden;">
+                            <div class="form-group bg-light">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="datetimepicker13"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                    </form>
+
+                  </div>
+
+                </div>
+      
+                <div class="modal-footer bg-blood">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+                  <button type="button" class="btn btn-primary">Zarezerwuj</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+               <!--------------modal voucher form------------>
+               <div class="modal fade" id="modalVoucher" tabindex="-1" role="dialog" aria-labelledby="modalVoucher" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content col-xs-10">
+                    <div class="modal-header bg-danger">
+                      <h4 class="modal-title" id="exampleModalLongTitle">Zamów Voucher</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: white;">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body bg-gradient">
+          
+                      <div id="mainContent" class="col-sm-12 bg-dark">
+                        
+                        <form>
+                        
+                            <div class="form-group row">
+                          
+                              <div class="col-sm-6">
+                                <label for="phone"><strong>imię</strong></label>
+                                <input type="text" class="form-control" placeholder="Jan">
+                              </div>
+
+                              <div class="col-sm-6">
+                                <label for="phone"><strong>nazwisko</strong></label>
+                                <input type="text" class="form-control" placeholder="Barberski">
+                              </div>
+
+                            </div>
+                
+                            <div class="form-group row">
+                              <div class="col-sm-12">
+                              <label for="phone"><strong>telefon</strong></label>
+                              <input class="form-control" type="number" name="phone" id="phone" placeholder="+48 777-777-777">
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <div class="col-sm-12">
+                              <label for="firstname"><strong>e-mail</strong></label>
+                              <input class="form-control" id="email" type="text" name="email" placeholder="jan@barberski.pl">
+                              </div>
+                            </div>
+                             
+                            <fieldset class="border p-2 mb-3">
+                              <legend  class="w-auto">Wybierz Voucher</legend>
+                  
+                              <div class="form-check pl-0 pb-2">
+                                <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Strzyżenie 00zł</label> 
+                              </div>
+                              <div class="form-check pl-0 pb-2">
+                                <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Combo 00zł</label>
+                              </div> 
+                              <div class="form-check pl-0 pb-2">
+                                <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Trymowanie brody 00zł</label> 
+                              </div>
+                              <div class="form-check pl-0 pb-2">
+                                <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Trymowanie brody z brzytwą 00zł</label> 
+                              </div>
+                              <div class="form-check pl-0 pb-2">
+                                <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Królewskie golenie 00zł</label> 
+                              </div>     
+                              <div class="form-check pl-0 pb-2">
+                                <input type="checkbox" value="Adam"><label class="form-check-label pl-4">Strzyżenie ojciec i syn 00zł</label> 
+                              </div>
+
+                            </fieldset>
+                            
+                        </form>
+
+                      </div>
+
+                    </div>
+
+                    <div class="modal-footer bg-blood">
+
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+                      <button type="button" class="btn btn-primary">Zamawiam</button>
+                   
+                    </div>
+
+                  </div>
+                </div>
+              </div>
 
             <!--------------scroll up button------------>
             <a href="#" class="scrollup"></a>
@@ -129,13 +369,13 @@
 
       </header>
 
-          <div class="container-3">
+          <div class="container-3 pt-4">
 
-              <h1 id="news" style="padding-bottom: 40px;">Aktualności</h1><br/><br/>
+              <h2 id="news">Aktualności</h2><br/><br/>
 
               <p style="line-height: 40px; padding-bottom: 60px;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-              <h1 id="uslugi" style="padding-bottom: 40px;">Usługi</h1><br/><br/>
+              <h2 id="uslugi">Usługi</h2><br/><br/>
 
               <p style="line-height: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -143,58 +383,58 @@
 
           <div class="container-9">
               
-              <table>
+              <table id="pricelist">
 
                 <p>Cennik</p>
 
                 <tr>
-                <td>Strzyżenie Buzz</td><td>00 zł</td>
+                <td id="cell">Strzyżenie Buzz</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Strzyżenie</td><td>00 zł</td>
+                <td id="cell">Strzyżenie</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Combo</td><td>00 zł</td>
+                <td id="cell">Combo</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Trymowanie brody</td><td>00 zł</td>
+                <td id="cell">Trymowanie brody</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Trymowanie brody z brzytwą</td><td>00 zł</td>
+                <td id="cell">Trymowanie brody z brzytwą</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Tuszowanie brody</td><td>00 zł</td>
+                <td id="cell">Tuszowanie brody</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Królewskie golenie</td><td>00 zł</td>
+                <td id="cell">Królewskie golenie</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Strzyżenie chłopca</td><td>00 zł</td>
+                <td id="cell">Strzyżenie chłopca</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td>Strzyżenie ojciec i syn</td><td>00 zł</td>
+                <td id="cell">Strzyżenie ojciec i syn</td><td id="cell">00 zł</td>
                 </tr>
                 <tr>
-                <td> Woskowanie</td><td>00 zł</td>
+                <td id="cell"> Woskowanie</td><td id="cell">00 zł</td>
                 </tr>
 
               </table>
 
           </div>
 
-          <div class="container-4">
+          <div class="container-4 pt-4">
 
-            <h1>Excepteur sint occaecat cupidatat?</h1><br/><br/>
+            <h2>Excepteur sint occaecat cupidatat?</h2>
 
             <p style="line-height: 40px;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <button id="guzik">Zamów Kartę</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVoucher">Zamów Voucher</button>
 
           </div>
 
           <div class="container-5">
 
-            <h1 id="galeria" style="text-align: justify;">Galeria</h1><br/><br/>
+            <h2 id="galeria" style="text-align: justify;">Galeria</h2><br/><br/>
 
             <h3>Nasza Ekipa</h3><br/><br/>
 
@@ -287,37 +527,37 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                  <img class="d-block w-100" src="img/fryzura1.jpg" alt="Fryzura 1">
                   <div class="carousel-caption d-none d-md-block">
                   <h3>Excepteur sint occaecat cupidatat non proident</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                  <img class="d-block w-100" src="img/fryzura2.jpg" alt="Fryzura 2">
                   <div class="carousel-caption d-none d-md-block">
                   <h3>Duis aute irure dolor in reprehenderit in voluptate</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                  <img class="d-block w-100" src="img/fryzura3.jpg" alt="Fryzura 3">
                   <div class="carousel-caption d-none d-md-block">
                   <h3>Lorem ipsum dolor sit amet</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                  <img class="d-block w-100" src="img/fryzura4.jpg" alt="Fryzura 4">
                   <div class="carousel-caption d-none d-md-block">
                   <h3>officia deserunt mollit anim id est</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                  <img class="d-block w-100" src="img/fryzura5.jpg" alt="Fryzura 5">
                   <div class="carousel-caption d-none d-md-block">
                   <h3>Excepteur sint occaecat cupidatat non proident</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <video autoplay loop muted class="d-block w-100" src="barber.mp4" type="video/mp4"></video>
+                  <img class="d-block w-100" src="img/fryzura6.jpg" alt="Fryzura 6">
                   <div class="carousel-caption d-none d-md-block">
                   <h3>Duis aute irure dolor in reprehenderit in voluptate</h3>
                   </div>
@@ -356,7 +596,7 @@
 
               <div class="col-lg-6 col-xs-12" >
 
-                <h1 id="contact">Kontakt</h1><br/><br/>
+                <h2 id="contact">Kontakt</h2><br/><br/>
 
                 <h3>tel. 000 000 000, lorem@ipsum.pl</h3><br/><br/>
 
@@ -391,10 +631,10 @@
                       </div>
               
                       <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                        <textarea class="input100" name="message" placeholder="napisz wiadomość..."></textarea>
+                        <textarea id="textContact" class="input100" name="message" placeholder="napisz wiadomość..."></textarea>
                       </div>
               
-                      <div class="contact100-form-checkbox">
+                      <div class="contact100-form-checkbox pb-2 pt-2">
                         <input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
                         <label class="label-checkbox100" for="ckb1">
                           kopia wiadomości na e-mail
@@ -404,9 +644,7 @@
                       <div class="container-contact100-form-btn">
                         <div class="wrap-contact100-form-btn">
                           <div class="contact100-form-bgbtn"></div>
-                          <button class="contact100-form-btn">
-                            wyślij!
-                          </button>
+                          <button type="button" class="btn btn-primary">Wyślij</button>
                         </div>
                       </div>
                     </form>
@@ -419,34 +657,11 @@
 
                 <div id="dropDownSelect1"></div>
 
-                <h1 id="contact">Adres</h1><br/><br/>
+                <h2 id="contact">Adres</h2><br/><br/>
                 <h3>ul. Loremska 0</h3>
                 <h3>00-000 Ipsumowo</h3><br/><br/>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8367179751767!2d21.01037415055339!3d52.22818426546852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf246f68fd9%3A0x90cbe31876b6add7!2sMarsza%C5%82kowska%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1587754657584!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0; padding: 50px 0px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-                <!--============================================================-->
-                <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-                <script src="vendor/animsition/js/animsition.min.js"></script>
-                <script src="vendor/bootstrap/js/popper.js"></script>
-                <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-                <script src="vendor/select2/select2.min.js"></script>
-                <script src="vendor/daterangepicker/moment.min.js"></script>
-                <script src="vendor/daterangepicker/daterangepicker.js"></script>
-                <script src="vendor/countdowntime/countdowntime.js"></script>
-                <script src="js/main.js"></script>
-                <!--============================================================-->
-              
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-
-                <script>
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                
-                  gtag('config', 'UA-23581568-13');
-                </script>
 
               </div>
 
@@ -456,17 +671,32 @@
 
       <footer>
 
-          <div class="col-lg-12"><a class="logo-stopka" href="#">BARBER <sub style="font-size: 10px;">&reg;</sub></a></div>
-          <div class="col-lg-12">Copyright &copy; 2020 strzewiczek.pl</div>
+        <div class="col-lg-12"><a class="logo-stopka" href="#">BARBER <sub style="font-size: 10px;">&reg;</sub></a></div>
+        <div class="col-lg-12">Copyright &copy; 2020 strzewiczek.pl</div>
 
       </footer>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js "></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="js/main.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/scrollMenu.js"></script>
 
