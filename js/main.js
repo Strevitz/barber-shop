@@ -2,9 +2,7 @@
 (function ($) {
     "use strict";
 
-
-    /*==================================================================
-    [ Validate ]*/
+    // Validate
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
@@ -52,7 +50,33 @@
         $(thisAlert).removeClass('alert-validate');
     }
 
-    
+    var person = {
+        fullName: "Jan Barberski",
+        email: "jan.barberski@email.com",
+        phone: "+48666666666",
+        textContact: "napisz wiadomość..."
+    }
+
+    // populate the form
+    $('#fullName').val(person.fullName);
+    $('#email').val(person.email);
+    $('#phone').val(person.phone);
+    $('#textContact').val(person.textContact);
+
+    // populate object on submit
+    $('#contact-form').submit(function(event) {
+        person.fullName = $('#fullName').val();
+        person.email = $('#email').val();
+        person.phone = $('#phone').val();
+        person.textContact = $('#textContact').val();
+
+        event.preventDefault();
+    });
+
+})(jQuery);
+
+$(function() {
+    // booking calendar settings
     $('#datetimepicker13').datetimepicker({
         inline: true,
         sideBySide: true,
@@ -62,8 +86,8 @@
         daysOfWeekDisabled: [0],
         disabledHours: [0,1,2,3,4,5,6,7,8,19,20,21,22,23],
     });  
-    
-})(jQuery);
+
+});
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}

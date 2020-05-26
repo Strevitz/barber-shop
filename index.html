@@ -130,26 +130,26 @@
                           <div class="col-sm-6">
 
                             <label for="phone"><strong>imię</strong></label>
-                            <input type="text" class="form-control" placeholder="Jan">
+                            <input type="text" class="form-control" placeholder="Jan" required>
                           </div>
                           <div class="col-sm-6">
 
                             <label for="phone"><strong>nazwisko</strong></label>
-                            <input type="text" class="form-control" placeholder="Barberski">
+                            <input type="text" class="form-control" placeholder="Barberski" required>
                           </div>
                         </div>
             
                         <div class="form-group row">
                           <div class="col-sm-12">
                           <label for="phone"><strong>telefon</strong></label>
-                          <input class="form-control" type="number" name="phone" id="phone" placeholder="+48 777-777-777">
+                          <input class="form-control" type="number" name="phone" id="phone" placeholder="+48 777-777-777" required>
                           </div>
                         </div>
 
                         <div class="form-group row">
                           <div class="col-sm-12">
                           <label for="firstname"><strong>e-mail</strong></label>
-                          <input class="form-control" id="email" type="text" name="email" placeholder="jan@barberski.pl">
+                          <input class="form-control" id="email" type="text" name="email" placeholder="jan@barberski.pl" required>
                           </div>
                         </div>
                        
@@ -255,7 +255,7 @@
 
                 </div>
       
-                <div class="modal-footer bg-blood">
+                <div class="modal-footer bg-grey">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
                   <button type="button" class="btn btn-primary">Zarezerwuj</button>
                 </div>
@@ -337,7 +337,7 @@
 
                     </div>
 
-                    <div class="modal-footer bg-blood">
+                    <div class="modal-footer bg-grey">
 
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
                       <button type="button" class="btn btn-primary">Zamawiam</button>
@@ -604,13 +604,13 @@
 
                 <div class="container-contact100">
                   <div class="wrap-contact100">
-                    <form class="contact100-form validate-form">
+                    <form class="contact100-form validate-form" id="contact-form">
                       <span class="contact100-form-title">
                         
                       </span>
               
                       <div class="wrap-input100 validate-input" data-validate="Name is required">
-                        <input class="input100" id="name" type="text" name="name" placeholder="imię i nazwisko">
+                        <input class="input100" id="fullName" type="text" name="name" placeholder="imię i nazwisko">
                         <label class="label-input100" for="name">
                           <span class="lnr lnr-user"></span>
                         </label>

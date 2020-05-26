@@ -1,22 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
     font-family: 'Oswald', sans-serif;
     color: #fff;
 }
 
-  /* ----------hero----------- */
+  /* ----------[ backgrounds ]----------- */
 
 .bg-danger{
     background-color: #742121!important;
 }
 
-.bg-blood{
+.bg-grey{
     background-color: #252525;
 }
 
 .bg-gradient{
     background-image: linear-gradient(#742121, #252525);
 }
+
+ /* ----------[ booking modal form ]----------- */
 
 .timepicker-hour{
     color: black;
@@ -39,6 +45,8 @@ body{
     padding: 10px;
     margin: 0 auto;
 }
+
+ /* ----------[ containers ]----------- */
 
 .container{
     max-width: 100%;
@@ -74,6 +82,8 @@ body{
     background-image: linear-gradient(black, #742121);
 }
 
+ /* ----------[ pricelist ]----------- */
+
 #pricelist, #cell{
     text-align:justify;
     padding: 12px;
@@ -88,6 +98,8 @@ body{
 #pricelist{
     text-align:center;
 }
+
+ /* ----------[ hero carousel ]----------- */
 
 .carousel-caption{
     padding-bottom: 15%;
@@ -148,7 +160,6 @@ video{
     background: -webkit-linear-gradient(#971111, #c97979);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .navbar-nav li:hover>.dropdown-menu{
@@ -156,10 +167,8 @@ video{
     background-color: black;
 }
 
-
 .nav-link{
     font-size: 20px;
-
     margin-left: 10px;
 }
 
@@ -191,7 +200,7 @@ video{
     background-color: black!important;
 }
 
-  /* ----------game page----------- */
+  /* ----------[ game page ]----------- */
 
 .flex-box-rps{
     display: flex;
@@ -202,12 +211,10 @@ video{
 }
 
 .flex-box-rps img:hover{
-
     box-shadow: 0px 10px 50px rgb(81, 81, 252);
-
 }
 
-  /* ----------social media----------- */
+  /* ----------[ social media ]----------- */
 
 .fb
 {
@@ -305,7 +312,7 @@ h1{
     margin-right: auto;
 }
 
-  /* ----------footer----------- */
+/* ----------[ footer ]----------- */
 
   footer{
     text-align: center;
@@ -326,7 +333,7 @@ h1{
     color: #fff;
 }
 
-/* ----------scroll up----------- */
+/* ----------[ scroll up ]----------- */
 
 .scrollup{
     display: block;
@@ -368,14 +375,16 @@ div.desc {
     text-align: center;
 }
   
-* {
-    box-sizing: border-box;
-}
-  
 .responsive {
     text-align: center;
     float: left;
     width: 33%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
   
 @media only screen and (max-width: 700px) {
@@ -391,8 +400,3 @@ div.desc {
     }
 }
   
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
