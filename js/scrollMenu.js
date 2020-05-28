@@ -1,8 +1,8 @@
       jQuery(function($)
       {
-        //zresetuj scrolla
+        //reset scroll
         $.scrollTo(0);
-        
+
         $('#link1').click(function() { $.scrollTo($('#uslugi'), 500); });
         $('#link2').click(function() { $.scrollTo($('#galeria'), 500); });
         $('#link3').click(function() { $.scrollTo($('#contact'), 500); });
@@ -12,10 +12,10 @@
       }
       );
 
-      //pokaż podczas przewijania
+      //show when scrolling
 		  $(window).scroll(function()
 	  	{
 			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();		
+			else $('.scrollup').fadeOut();
 	  	}
 	  	);

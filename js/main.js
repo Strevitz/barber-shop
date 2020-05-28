@@ -18,7 +18,6 @@
         return check;
     });
 
-
     $('.validate-form .input100').each(function(){
         $(this).focus(function(){
            hideValidate(this);
@@ -85,7 +84,7 @@ $(function() {
         minDate: moment(),
         daysOfWeekDisabled: [0],
         disabledHours: [0,1,2,3,4,5,6,7,8,19,20,21,22,23],
-    });  
+    });
 
 });
 
