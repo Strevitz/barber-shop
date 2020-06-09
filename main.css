@@ -1,0 +1,409 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+/* ----------[ backgrounds ]----------- */
+.bg-danger {
+  background-color: #742121 !important;
+}
+
+.bg-grey {
+  background-color: #252525;
+}
+
+.bg-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#742121), to(#252525));
+  background-image: linear-gradient(#742121, #252525);
+}
+
+/* ----------[ modal booking form ]----------- */
+.timepicker-hour {
+  color: black;
+}
+
+.separator {
+  color: black;
+}
+
+.timepicker-minute {
+  color: black;
+}
+
+.form-check-input {
+  position: relative;
+}
+
+#mainContent {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#742121), to(#252525));
+  background-image: linear-gradient(#742121, #252525);
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/* ----------[ containers ]----------- */
+.container {
+  max-width: 100%;
+  padding: 0px 0px;
+}
+
+.container-1, .container-2 {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.container-3, .container-5, .container-6, .container-7, .container-8 {
+  text-align: justify;
+  padding: 20px 60px;
+  line-height: 2px;
+}
+
+.container-4 {
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#742121), to(black));
+  background-image: linear-gradient(black, #742121, black);
+  padding: 20px 60px;
+}
+
+.container-9 {
+  text-align: center;
+  background-color: black;
+  padding: 20px 60px;
+}
+
+.container-8 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#742121));
+  background-image: linear-gradient(black, #742121);
+}
+
+/* ----------[ pricelist ]----------- */
+#pricelist, #cell {
+  text-align: justify;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cell {
+  padding-right: 45px;
+}
+
+#pricelist {
+  text-align: center;
+}
+
+/* ----------[ hero carousel ]----------- */
+.carousel-caption {
+  padding-bottom: 15%;
+}
+
+#guzik {
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  padding: 9px;
+  border-width: 4px;
+  border-radius: 8px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+#guzik:hover {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+  padding: 9px;
+  border-width: 4px;
+  border-radius: 8px;
+}
+
+video {
+  opacity: 0.6;
+}
+
+/* ----------navbar----------- */
+.navbar {
+  position: relative;
+}
+
+.bg-barber {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  font-family: 'Girassol', cursive;
+  font-size: 55px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#971111), to(#c97979));
+  background: linear-gradient(#971111, #c97979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 10px;
+}
+
+.navbar-brand:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c97979), to(#971111));
+  background: linear-gradient(#c97979, #971111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#orginal {
+  font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#971111), to(#c97979));
+  background: linear-gradient(#971111, #c97979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav li:hover > .dropdown-menu {
+  display: block;
+  background-color: black;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #a12e2e !important;
+}
+
+.dropdown-menu {
+  text-align: center;
+  background-color: black;
+  border: none;
+}
+
+.dropdown-menu:hover {
+  background-color: black;
+}
+
+.dropdown-item {
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  background-color: black;
+}
+
+.dropdown-item:hover {
+  color: #a12e2e !important;
+  background-color: black !important;
+}
+
+/* ----------[ game page ]----------- */
+.flex-box-rps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-box-rps img:hover {
+  -webkit-box-shadow: 0px 10px 50px #5151fc;
+          box-shadow: 0px 10px 50px #5151fc;
+}
+
+/* ----------[ social media ]----------- */
+.fb {
+  width: 33%;
+  height: 100px;
+  float: left;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.fb:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#742121), to(black));
+  background-image: linear-gradient(#742121, black);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.yt {
+  width: 33%;
+  height: 100px;
+  float: left;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.yt:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#742121), to(black));
+  background-image: linear-gradient(#742121, black);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gplus {
+  width: 33%;
+  height: 100px;
+  float: left;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.gplus:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#742121), to(black));
+  background-image: linear-gradient(#742121, black);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* ----------contact----------- */
+#contact {
+  padding-top: 60px;
+  text-align: justify;
+}
+
+.input100 {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  outline: none;
+  border-radius: 5px;
+}
+
+#textContact {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  padding: 6px;
+  outline-color: gold;
+  outline-width: 8px;
+  border-radius: 5px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.contact100-form-btn:hover {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+  padding: 9px;
+  border-width: 4px;
+  border-radius: 8px;
+}
+
+.container-contact100 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.wrap-contact100 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------[ footer ]----------- */
+footer {
+  text-align: center;
+  background-color: #742121;
+  padding: 60px 0px;
+}
+
+.logo-stopka {
+  font-family: 'Girassol', cursive;
+  font-size: 35px;
+  color: #fff;
+}
+
+.logo-stopka:hover {
+  text-decoration: none;
+  font-family: 'Girassol', cursive;
+  font-size: 35px;
+  color: #fff;
+}
+
+/* ----------[ scroll up ]----------- */
+.scrollup {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  background: url("img/arrow.png") no-repeat 0px 0px;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  opacity: 0.8;
+}
+
+/* ----------img gallery----------- */
+div.gallery {
+  border: none;
+  -webkit-transition: ease-in-out all 0.3s;
+  transition: ease-in-out all 0.3s;
+  opacity: 0.8;
+  margin: 40px 30px;
+}
+
+div.gallery:hover {
+  border: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+}
+
+div.gallery img {
+  width: 70%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.responsive {
+  text-align: center;
+  float: left;
+  width: 33%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

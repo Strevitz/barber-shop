@@ -1,28 +1,36 @@
+$font-stack: 'Oswald', sans-serif;
+$barber-red: #742121;
+$barber-antracite: #252525;
+$modal-dialog-gradient: linear-gradient(#742121, #252525);
+$logo-gradient: linear-gradient(#971111, #c97979);
+$padding: 20px 60px;
+
 * {
     box-sizing: border-box;
+    font-family: $font-stack;
 }
 
 body{
     background-color: black;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-stack;
     color: #fff;
 }
 
   /* ----------[ backgrounds ]----------- */
 
 .bg-danger{
-    background-color: #742121!important;
+    background-color: $barber-red!important;
 }
 
 .bg-grey{
-    background-color: #252525;
+    background-color: $barber-antracite;
 }
 
 .bg-gradient{
-    background-image: linear-gradient(#742121, #252525);
+    background-image: $modal-dialog-gradient;
 }
 
- /* ----------[ booking modal form ]----------- */
+ /* ----------[ modal booking form ]----------- */
 
 .timepicker-hour{
     color: black;
@@ -41,7 +49,7 @@ body{
 }
 
 #mainContent{
-    background-image: linear-gradient(#742121, #252525);
+    background-image: linear-gradient($barber-red, $barber-antracite);
     padding: 10px;
     margin: 0 auto;
 }
@@ -62,24 +70,24 @@ body{
 
 .container-3, .container-5, .container-6, .container-7, .container-8{
     text-align: justify;
-    padding: 20px 60px;
+    padding: $padding;
     line-height: 2px;
 }
 
 .container-4{
     text-align: center;
-    background-image: linear-gradient(black, #742121, black);
-    padding: 20px 60px;
+    background-image: linear-gradient(black, $barber-red, black);
+    padding: $padding;
 }
 
 .container-9{
     text-align: center;
     background-color: black;
-    padding: 20px 60px;
+    padding: $padding;
 }
 
 .container-8{
-    background-image: linear-gradient(black, #742121);
+    background-image: linear-gradient(black, $barber-red);
 }
 
  /* ----------[ pricelist ]----------- */
@@ -114,16 +122,15 @@ body{
     border-width: 4px;
     border-radius: 8px;
     transition: ease-in-out 0.3s;
-}
-
-#guzik:hover{
-    font-size: 18px;
-    color: black;
-    background-color: white;
-    opacity: 0.7;
-    padding: 9px;
-    border-width: 4px;
-    border-radius: 8px;
+    &:hover{
+        font-size: 18px;
+        color: black;
+        background-color: white;
+        opacity: 0.7;
+        padding: 9px;
+        border-width: 4px;
+        border-radius: 8px;
+    }
 }
 
 video{
@@ -143,21 +150,20 @@ video{
 .navbar-brand{
     font-family: 'Girassol', cursive;
     font-size: 55px;
-    background: -webkit-linear-gradient(#971111, #c97979);
+    background: $logo-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
-}
-
-.navbar-brand:hover{
-    background: -webkit-linear-gradient(#c97979, #971111);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    &:hover{
+        background: linear-gradient(#c97979, #971111);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 #orginal{
     font-size: 14px;
-    background: -webkit-linear-gradient(#971111, #c97979);
+    background: $logo-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -222,12 +228,10 @@ video{
     height: 100px;
     float: left;
     transition: ease-in-out 0.3s;
-}
-
-.fb:hover
-{
-    background-image: linear-gradient(#742121, black);
-    transform: scale(1.1);
+    &:hover{
+        background-image: linear-gradient($barber-red, black);
+        transform: scale(1.1);
+    }
 }
 
 .yt
@@ -236,12 +240,10 @@ video{
     height: 100px;
     float: left;
     transition: ease-in-out 0.3s;
-}
-
-.yt:hover
-{
-    background-image: linear-gradient(#742121, black);
-    transform: scale(1.1);
+    &:hover{
+        background-image: linear-gradient($barber-red, black);
+        transform: scale(1.1);
+    }
 }
 
 .gplus
@@ -250,12 +252,10 @@ video{
     height: 100px;
     float: left;
     transition: ease-in-out 0.3s;
-}
-
-.gplus:hover
-{
-    background-image: linear-gradient(#742121, black);
-    transform: scale(1.1);
+    &:hover{
+        background-image: linear-gradient($barber-red, black);
+        transform: scale(1.1);
+    }
 }
 
   /* ----------contact----------- */
@@ -314,7 +314,7 @@ h1{
 
 /* ----------[ footer ]----------- */
 
-  footer{
+footer{
     text-align: center;
     background-color: #742121;
     padding: 60px 0px;
@@ -324,13 +324,12 @@ h1{
     font-family: 'Girassol', cursive;
     font-size: 35px;
     color: #fff;
-}
-
-.logo-stopka:hover{
-    text-decoration: none;
-    font-family: 'Girassol', cursive;
-    font-size: 35px;
-    color: #fff;
+    &:hover{
+        text-decoration: none;
+        font-family: 'Girassol', cursive;
+        font-size: 35px;
+        color: #fff;
+    }
 }
 
 /* ----------[ scroll up ]----------- */
@@ -354,17 +353,16 @@ div.gallery {
     transition: ease-in-out all 0.3s;
     opacity: 0.8;
     margin: 40px 30px;
-}
+    &:hover {
+        border: none;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    img {
+        width: 70%;
+        height: auto;
 
-div.gallery:hover {
-    border: none;
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-div.gallery img {
-    width: 70%;
-    height: auto;
+    }
 
 }
 
@@ -399,4 +397,3 @@ div.desc {
       width: 100%;
     }
 }
-
