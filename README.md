@@ -19,8 +19,6 @@ I also implemented modal dialogs with bookings and voucher purchase system. The 
 - Vanilla Javascript
 - Markups
 - Sassy CSS
-- Context API
-- Jest
 
 ## Setup
 
